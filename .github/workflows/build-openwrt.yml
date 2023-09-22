@@ -106,11 +106,6 @@ jobs:
         # echo "=== add openclash ==="
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
         # mv OpenClash/luci-app-openclash openwrt/package/
-
-        # upgrade golang to 1.20
-        pushd openwrt/feeds/packages/lang
-        rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/branches/23.05/lang/golang
-        popd
         
         # check space usage
         echo "====="
@@ -132,6 +127,11 @@ jobs:
 
     - name: Load custom configuration
       run: |
+        # upgrade golang to 1.20
+        pushd openwrt/feeds/packages/lang
+        rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/branches/23.05/lang/golang
+        popd
+        
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
