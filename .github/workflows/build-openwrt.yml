@@ -91,7 +91,10 @@ jobs:
         
         # update luci-theme-argon
         cd openwrt/package
-        git clone --depth=1  https://github.com/jerrykuku/luci-theme-argon.git 
+        git clone --depth=1  https://github.com/jerrykuku/luci-theme-argon.git
+        # 测试代码：隐藏登陆界面中的用户名和删除footer信息
+        sed -i 's/value="<%=duser%>"/placeholder="username"/g' luci-theme-argon/luasrc/view/themes/argon/sysauth.htm
+        sed -i '/<%+themes\/argon\/footer_login%>/d' luci-theme-argon/luasrc/view/themes/argon/sysauth.htm
         cd ../..
         
         # 添加 dockerman
