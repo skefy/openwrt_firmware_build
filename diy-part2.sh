@@ -13,8 +13,6 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
-sed -i 's#src-git-full packages https://github.com/immortalwrt/packages.git;openwrt-21.02#src-git-full packages https://github.com/immortalwrt/packages.git#' feeds.conf.default
-
 ##########################################
 # update Xray-core and Xray-Plugin 
 # https://github.com/immortalwrt/packages
