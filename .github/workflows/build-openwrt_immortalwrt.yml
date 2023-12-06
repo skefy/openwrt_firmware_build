@@ -137,7 +137,7 @@ jobs:
       run: |
         # upgrade golang to 1.20
         pushd openwrt/feeds/packages/lang
-        rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/branches/23.05/lang/golang
+        rm -rf golang && svn co https://github.com/Lienol/openwrt-packages/branches/master/lang/golang
         popd
         
         [ -e files ] && mv files openwrt/files
