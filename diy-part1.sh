@@ -26,5 +26,3 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 
 # custom packages
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i 's#src-git-full packages https://github.com/immortalwrt/packages.git;openwrt-21.02#src-git-full packages https://github.com/immortalwrt/packages.git#' feeds.conf.default
-
