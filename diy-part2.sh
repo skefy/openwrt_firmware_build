@@ -35,3 +35,7 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 # sed -i 's/^PKG_HASH:=.*/PKG_HASH:=dfa0f9d6d1297819567cedad525025d2a6db07a1553213f2ecb2de110918c07c/' feeds/packages/net/v2ray-core/Makefile
 # sed -i 's/^PKG_VERSION:=.*/PKG_VERSION:=5.10.0/' feeds/packages/net/v2ray-plugin/Makefile
 # sed -i 's/^PKG_HASH:=.*/PKG_HASH:=2ff37018e8bb6e9208206e84b9b5be77ad3d9a9e62bf2078b871f4f7066a87b8/' feeds/packages/net/v2ray-plugin/Makefile
+
+# chage curl 8.6.0 to 8.5.0
+rm -rf feeds/packages/net/curl
+git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
