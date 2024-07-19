@@ -110,6 +110,11 @@ jobs:
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
         # mv OpenClash/luci-app-openclash openwrt/package/
 
+        # 添加 passwall2
+        echo "=== add passwall2 ==="
+        git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2.git
+        mv openwrt-passwall2/luci-app-passwall2 openwrt/package/
+
         # add MosDNS
         rm -rf openwrt/feeds/packages/net/v2ray-geodata
         git clone https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
