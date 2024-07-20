@@ -113,7 +113,7 @@ jobs:
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
         # mv OpenClash/luci-app-openclash openwrt/package/
 
-        # 在 diy-part2.sh 添加 passwall2
+        # 在 diy-part1.sh 添加 passwall2
 
         # add MosDNS
         rm -rf openwrt/feeds/packages/net/v2ray-geodata
