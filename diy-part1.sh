@@ -28,5 +28,4 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 
 # change uboot-rockchip 
-sed -i 's/2024\.10-rc4/2024.07/g' package/boot/uboot-rockchip/Makefile
-sed -i 's/7547a5d5147b748094dc88c6d6f196519e97cca3eb66137a4acb92e9e63e0626/f591da9ab90ef3d6b3d173766d0ddff90c4ed7330680897486117df390d83c8f/g' package/boot/uboot-rockchip/Makefile
+git checkout c200bf51dbee30164d7e25d466fcd44e22211bcc -- package/boot/uboot-rockchip/Makefile  
