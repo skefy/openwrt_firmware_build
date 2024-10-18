@@ -118,8 +118,8 @@ jobs:
 
         # add MosDNS
         rm -rf openwrt/feeds/packages/net/v2ray-geodata
-        git clone https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
-        git clone https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
+        git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
+        git clone --depth=1 https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
         
         # check space usage
         echo "====="
