@@ -22,6 +22,9 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 git config --global user.name "Leon"
 git config --global user.email leon@gmail.com
 
+# 尝试解决openssl错误
+git revert 31ec451
+
 # add i915
 sudo mkdir /lib/firmware/i915
 sudo curl -L https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/i915/tgl_dmc_ver2_12.bin -o /lib/firmware/i915/tgl_dmc_ver2_12.bin
