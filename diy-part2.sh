@@ -33,5 +33,7 @@ echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 # git revert 31ec451
 # git add package/libs/openssl/Makefile
 # git revert --continue --no-edit
-# rm -rf package/libs/openssl
-# svn checkout https://github.com/istoreos/istoreos/trunk/package/libs/openssl package/libs/openssl
+rm -rf package/libs/openssl
+cd ..
+git clone --depth=1 https://github.com/istoreos/istoreos.git istoreos
+cp -r istoreos/package/libs/openssl openwrt/package/libs/
