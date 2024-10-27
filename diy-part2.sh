@@ -31,4 +31,6 @@ echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 
 # 尝试解决openssl错误
 cd openwrt
-git revert 31ec4515c3c14704d669156d87e2af5eeb5420e4
+git revert 31ec451
+git add package/libs/openssl/Makefile
+git revert --continue --no-edit
