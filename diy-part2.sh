@@ -37,3 +37,4 @@ rm -rf package/libs/openssl
 cd ..
 git clone --depth=1 https://github.com/istoreos/istoreos.git istoreos
 cp -r istoreos/package/libs/openssl openwrt/package/libs/
+cd openwrt
