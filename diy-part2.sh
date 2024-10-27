@@ -23,7 +23,7 @@ git config --global user.name "Leon"
 git config --global user.email leon@gmail.com
 
 # 尝试解决openssl错误
-git revert 31ec451
+git revert 31ec4515c3c14704d669156d87e2af5eeb5420e4
 
 # add i915
 sudo mkdir /lib/firmware/i915
