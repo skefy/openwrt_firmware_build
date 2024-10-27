@@ -30,7 +30,6 @@ echo 'CONFIG_EXTRA_FIRMWARE="i915/tgl_dmc_ver2_12.bin"' >> target/linux/x86/conf
 echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 
 # 尝试解决openssl错误
-cd openwrt
 git revert 31ec451
 git add package/libs/openssl/Makefile
 git revert --continue --no-edit
