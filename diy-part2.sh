@@ -33,8 +33,9 @@ echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 # git revert 31ec451
 # git add package/libs/openssl/Makefile
 # git revert --continue --no-edit
-rm -rf package/libs/openssl
-cd ..
-git clone --depth=1 https://github.com/coolsnowwolf/lede.git lede
-cp -r lede/package/libs/openssl openwrt/package/libs/
-cd openwrt
+# ------
+# rm -rf package/libs/openssl
+# cd ..
+# git clone --depth=1 https://github.com/coolsnowwolf/lede.git lede
+# cp -r lede/package/libs/openssl openwrt/package/libs/
+# cd openwrt
