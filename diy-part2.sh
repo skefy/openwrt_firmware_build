@@ -23,11 +23,11 @@ git config --global user.name "Leon"
 git config --global user.email leon@gmail.com
 
 # add i915
-sudo mkdir /lib/firmware/i915
-sudo curl -L https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/i915/tgl_dmc_ver2_12.bin -o /lib/firmware/i915/tgl_dmc_ver2_12.bin
-echo 'CONFIG_FIRMWARE_IN_KERNEL=y' >> target/linux/x86/config-6.6
-echo 'CONFIG_EXTRA_FIRMWARE="i915/tgl_dmc_ver2_12.bin"' >> target/linux/x86/config-6.6
-echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
+# sudo mkdir /lib/firmware/i915
+# sudo curl -L https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/i915/tgl_dmc_ver2_12.bin -o /lib/firmware/i915/tgl_dmc_ver2_12.bin
+# echo 'CONFIG_FIRMWARE_IN_KERNEL=y' >> target/linux/x86/config-6.6
+# echo 'CONFIG_EXTRA_FIRMWARE="i915/tgl_dmc_ver2_12.bin"' >> target/linux/x86/config-6.6
+# echo 'CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"' >> target/linux/x86/config-6.6
 
 # 尝试解决openssl错误
 # git revert 31ec451
