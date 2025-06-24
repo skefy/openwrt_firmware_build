@@ -105,10 +105,6 @@ jobs:
         # git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
         # mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
         
-        # 添加 istore (第三方应用商店）
-        # git clone --depth=1 https://github.com/linkease/istore.git
-        # mv istore/luci/luci-app-store/ openwrt/package/lean/
-        
         # 添加 openclash
         # echo "=== add openclash ==="
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
@@ -122,7 +118,8 @@ jobs:
         git clone --depth=1 https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
 
         # add NetSpeedTest
-        git clone --depth=1 https://github.com/sirpdboy/netspeedtest.git openwrt/package/netspeedtest
+        rm -rf  openwrt/feeds/packages/net/speedtest-cli 
+        git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest openwrt/package/netspeedtest
 
         
         # check space usage
