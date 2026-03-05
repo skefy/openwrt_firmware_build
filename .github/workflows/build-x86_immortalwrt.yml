@@ -115,13 +115,13 @@ jobs:
         # 在 diy-part1.sh 添加 passwall2
 
         # add MosDNS
-        rm -rf openwrt/feeds/packages/net/v2ray-geodata
-        git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
-        git clone --depth=1 https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
+        # rm -rf openwrt/feeds/packages/net/v2ray-geodata
+        # git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
+        # git clone --depth=1 https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
 
         # add NetSpeedTest
-        rm -rf  openwrt/feeds/packages/net/speedtest-cli 
-        git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest openwrt/package/netspeedtest
+        # rm -rf  openwrt/feeds/packages/net/speedtest-cli 
+        # git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest openwrt/package/netspeedtest
 
         
         # check space usage
