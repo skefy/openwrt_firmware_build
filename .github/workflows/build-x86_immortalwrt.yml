@@ -121,7 +121,8 @@ jobs:
 
         # add NetSpeedTest
         # rm -rf  openwrt/feeds/packages/net/speedtest-cli 
-        # git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest openwrt/package/netspeedtest
+        git clone --depth=1 https://github.com/sirpdboy/netspeedtest ./
+        mv netspeedtest/luci-app-netspeedtest openwrt/package/netspeedtest
 
         
         # check space usage
