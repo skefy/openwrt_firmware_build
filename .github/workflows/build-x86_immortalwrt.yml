@@ -103,10 +103,6 @@ jobs:
         sed -i '$d' luci-theme-argon/ucode/template/themes/argon/sysauth.ut
         cd ../..
         
-        # 添加 dockerman
-        # git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
-        # mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
-        
         # 添加 openclash
         # echo "=== add openclash ==="
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
@@ -119,11 +115,8 @@ jobs:
         # git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 openwrt/package/mosdns
         # git clone --depth=1 https://github.com/sbwml/v2ray-geodata openwrt/package/v2ray-geodata
 
-        # add NetSpeedTest
-        # rm -rf  openwrt/feeds/packages/net/speedtest-cli 
-        git clone --depth=1 https://github.com/sirpdboy/netspeedtest ./netspeedtest
-        mv netspeedtest/luci-app-netspeedtest openwrt/package/netspeedtest
-
+        git clone --depth=1 https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community.git
+        mv luci-app-tailscale-community/luci-app-tailscale-community openwrt/package/luci-app-tailscale-community
         
         # check space usage
         echo "====="
