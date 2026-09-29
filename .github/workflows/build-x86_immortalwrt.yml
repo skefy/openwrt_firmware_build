@@ -101,6 +101,8 @@ jobs:
         # sed -i '/<%+themes\/argon\/footer_login%>/d' luci-theme-argon/luasrc/view/themes/argon/sysauth.htm
         sed -i 's/value="{{ entityencode(duser, true) }}"//g' luci-theme-argon/ucode/template/themes/argon/sysauth.ut
         sed -i '$d' luci-theme-argon/ucode/template/themes/argon/sysauth.ut
+        # 修改登陆页面中的布局
+        sed -i 's/margin-left: 5%;/margin-left: 0%;/g' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
         cd ../..
         
         # 添加 openclash
