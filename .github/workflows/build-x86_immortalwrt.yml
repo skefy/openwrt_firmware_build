@@ -99,6 +99,8 @@ jobs:
         # 测试代码：隐藏登陆界面中的用户名和删除footer信息
         sed -i 's/value="{{ entityencode(duser, true) }}"//g' luci-theme-argon/ucode/template/themes/argon/login_form.ut
         sed -i '$d' luci-theme-argon/ucode/template/themes/argon/sysauth.ut
+        # 修改登陆框
+        sed -i '' '/^\.login-page \.login-form \.form-login \.cbi-button-apply {/,/}/ s/margin: 0;/margin: 0 0 30px;/' luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
         cd ../..
         
         # 添加 openclash
